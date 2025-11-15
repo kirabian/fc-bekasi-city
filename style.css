@@ -1,0 +1,523 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700;900&display=swap');
+
+/* Variabel Warna - KONSISTEN MERAH PUTIH */
+:root {
+    --fc-red: #D50000; /* Merah menyala */
+    --fc-dark-red: #A00000; /* Merah yang lebih gelap untuk kontras */
+    --fc-white: #FFFFFF;
+    --fc-light-grey: #F8F8F8; /* Abu terang untuk background ringan */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--fc-light-grey); /* Mengganti putih polos */
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: var(--fc-red); /* Judul selalu merah */
+    position: relative;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--fc-red);
+    margin: 10px auto 0;
+}
+
+/* Khusus untuk judul di section dengan background merah */
+.section-title.text-white {
+    color: var(--fc-white);
+}
+.section-title.text-white::after {
+    background-color: var(--fc-white);
+}
+
+
+/* ==== NAVBAR ==== */
+#mainNavbar {
+    background-color: var(--fc-red); /* Merah utama */
+    padding: 1rem 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#mainNavbar.navbar-scrolled {
+    background-color: var(--fc-dark-red); /* Merah gelap saat scroll */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow yang lebih jelas */
+    padding: 0.5rem 0;
+}
+
+.navbar-brand {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    color: var(--fc-white) !important;
+}
+
+.nav-link {
+    color: var(--fc-white) !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0.5rem;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-link::after { /* Efek hover garis bawah */
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--fc-white);
+    transition: width 0.3s ease-out;
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
+}
+
+.navbar .btn-light {
+    background-color: var(--fc-white);
+    color: var(--fc-red) !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.3s ease;
+}
+.navbar .btn-light:hover {
+    background-color: var(--fc-light-grey);
+    color: var(--fc-dark-red) !important;
+}
+
+
+/* ==== HERO SECTION ==== */
+.hero-section {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* ==== INI PERUBAHAN BACKGROUND GAMBAR ==== */
+    /* Pastikan kamu punya gambar di assets/images/hero_background.jpg */
+    background: url('assets/images/hero_background.jpg.png') no-repeat center center;
+    
+    background-size: cover;
+    background-attachment: fixed;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Shadow pada teks agar lebih 'cinematic' */
+}
+
+.hero-overlay {
+    background-color: rgba(213, 0, 0, 0.6); /* Overlay merah transparan */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, rgba(213, 0, 0, 0.7), rgba(255, 255, 255, 0.2)); /* Gradient overlay */
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    font-size: 5.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+.hero-section .btn-light {
+    background-color: var(--fc-white);
+    color: var(--fc-red) !important;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+.hero-section .btn-light:hover {
+    background-color: var(--fc-light-grey);
+    color: var(--fc-dark-red) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ==== NEXT MATCH SECTION ==== */
+.next-match-section {
+    background-color: var(--fc-red);
+    padding: 60px 0;
+    color: var(--fc-white); /* Teks putih di bagian ini */
+}
+
+.match-card {
+    background-color: var(--fc-white);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    color: #333; /* Warna teks dalam card */
+}
+
+.team-logo {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+.team-name {
+    font-size: 2rem;
+    color: var(--fc-dark-red);
+}
+
+.vs-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+    color: var(--fc-red);
+    line-height: 1;
+}
+
+.match-details {
+    margin-top: 30px;
+    border-top: 2px dashed var(--fc-light-grey);
+    padding-top: 30px;
+}
+
+.match-info, .match-venue {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.countdown-timer {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5rem;
+    color: var(--fc-red);
+    margin-top: 20px;
+}
+.countdown-timer small { /* Untuk label Hari, Jam, Menit, Detik */
+    font-size: 0.5em; /* Lebih kecil dari angka */
+    vertical-align: middle;
+    color: #777;
+}
+
+/* ==== NEWS SECTION ==== */
+.news-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    background-color: var(--fc-white);
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-category {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--fc-red);
+    text-transform: uppercase;
+}
+
+/* ==== TEAM SECTION ==== */
+#team-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: linear-gradient(to bottom, var(--fc-light-grey), var(--fc-white));
+}
+
+.player-card {
+    border: none;
+    background-color: var(--fc-white);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Penting agar gambar tidak keluar dari radius */
+}
+
+.player-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(213, 0, 0, 0.2); /* Shadow merah saat hover */
+}
+
+.player-img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover; /* Memastikan foto pemain terpotong rapi */
+    object-position: top; /* Fokus pada bagian atas foto (wajah) */
+    border-bottom: 4px solid var(--fc-red);
+}
+
+.player-card .card-body {
+    padding: 20px;
+    position: relative;
+}
+
+.player-number {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--fc-red);
+    position: absolute;
+    top: -40px; /* Angka 'melayang' di atas foto */
+    right: 15px;
+    text-shadow: -2px 2px 0px var(--fc-white), -3px 3px 0px rgba(0,0,0,0.1); /* Efek outline */
+    line-height: 1;
+}
+
+.player-name {
+    font-size: 1.8rem;
+    color: var(--fc-dark-red);
+    margin-top: 10px; /* Beri ruang dari angka */
+    margin-bottom: 5px;
+}
+
+.player-position {
+    font-weight: 700;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/* ==== FOOTER SECTION ==== */
+.footer-section {
+    background-color: var(--fc-dark-red); /* Merah yang lebih gelap */
+    color: var(--fc-white);
+    padding: 60px 0 20px 0;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    color: var(--fc-white);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    padding-left: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: var(--fc-light-grey);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: var(--fc-white);
+}
+
+.social-icons .social-link {
+    color: var(--fc-white);
+    font-size: 1.8rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons .social-link:hover {
+    color: var(--fc-red);
+}
+
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.2);
+    margin: 30px 0 20px;
+}
+
+.copyright-text {
+    font-size: 0.9rem;
+    color: var(--fc-light-grey);
+}
+
+/* ==== MODAL JADWAL ==== */
+.modal-content.bg-danger {
+    background-color: var(--fc-red) !important; /* Pastikan merah */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+.modal-header .modal-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: var(--fc-white);
+}
+
+.modal-header .btn-close-white {
+    filter: invert(1) grayscale(100%) brightness(200%); /* Membuat ikon close putih */
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+.modal-header .btn-close-white:focus {
+    box-shadow: none;
+}
+
+
+.match-schedule-item .team-logo-small {
+    max-width: 60px;
+    margin-bottom: 5px;
+}
+.match-schedule-item .team-name-small {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--fc-white);
+}
+.match-schedule-item .vs-text-small {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: var(--fc-white);
+}
+.match-schedule-item .match-date-venue {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--fc-light-grey);
+}
+.match-schedule-item i {
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+.modal-footer .btn-light {
+    background-color: var(--fc-white);
+    color: var(--fc-red) !important;
+    border: none;
+    font-weight: 700;
+}
+.modal-footer .btn-outline-light {
+    color: var(--fc-white);
+    border-color: var(--fc-white);
+    font-weight: 700;
+}
+.modal-footer .btn-outline-light:hover {
+    background-color: var(--fc-white);
+    color: var(--fc-red);
+}
+
+/* ==== TEAM SECTION (BARU) ==== */
+.hidden-squad {
+    display: none;
+}
+
+/* Style untuk memunculkan sisa skuad dengan animasi */
+.hidden-squad.show {
+    display: flex; /* 'flex' karena ini adalah Bootstrap .row */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ==============================================
+   ==== ANIMASI SCROLL-REVEAL ====
+   ============================================== */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Menambahkan delay untuk item berita agar tidak muncul bersamaan */
+#news .animate-on-scroll:nth-child(2) {
+     transition-delay: 0.2s;
+}
+#news .animate-on-scroll:nth-child(3) {
+     transition-delay: 0.4s;
+}
+
+/* ==============================================
+   ==== PERBAIKAN RESPONSIVE UNTUK HP ====
+   ============================================== */
+@media (max-width: 767.98px) {
+
+    /* 1. Hero Section */
+    .hero-section {
+        height: 70vh; /* Sedikit lebih pendek di HP */
+    }
+    .hero-section h1 {
+        font-size: 3rem; /* Perkecil font judul utama */
+    }
+    .hero-section .lead {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+    .hero-section .btn-lg {
+        font-size: 1rem;
+        padding: 12px 24px;
+    }
+
+    /* 2. Section Titles */
+    .section-title {
+        font-size: 2.2rem; /* Perkecil semua judul section */
+    }
+
+    /* 3. Next Match Card */
+    .match-card {
+        padding: 20px;
+    }
+    .team-name {
+        font-size: 1.5rem;
+    }
+    .vs-text {
+        font-size: 2.5rem;
+    }
+    .countdown-timer {
+        font-size: 2.1rem;
+    }
+
+    /* 4. SQUAD SECTION */
+    .player-card .card-body {
+        padding: 15px;
+    }
+    .player-img {
+        height: 200px; /* Buat foto pemain lebih pendek di HP */
+    }
+    .player-number {
+        font-size: 3rem;
+        top: -35px;
+        right: 10px;
+    }
+    .player-name {
+        font-size: 1.3rem;
+        margin-top: 5px;
+    }
+    .player-position {
+        font-size: 0.9rem;
+    }
+
+    /* 5. Modal Jadwal */
+    .modal-dialog {
+        margin: 0.5rem;
+    }
+    .match-schedule-item .col-5 {
+        /* Pindahkan detail jadwal ke bawah logo di HP */
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+}

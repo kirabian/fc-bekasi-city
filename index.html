@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Bekasi City - Official Website</title>
+    
+    <link rel="icon" href="assets/logo/fcbekasi.png" type="image/png">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo/fcbekasi.png" alt="Logo FC Bekasi City" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#hero">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#scheduleModal">Jadwal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team-section">Skuad</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-light text-danger ms-lg-2" href="#" data-bs-toggle="modal" data-bs-target="#ticketModal">Tiket</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container text-center text-white">
+            <h1 class="display-3 fw-bold">SATU BEKASI, SATU HATI</h1>
+            <p class="lead my-4">Situs Resmi Klub Sepak Bola FC Bekasi City. Dapatkan berita terbaru, jadwal, dan tiket di sini.</p>
+            <a href="#" class="btn btn-light btn-lg text-uppercase" data-bs-toggle="modal" data-bs-target="#scheduleModal">Lihat Jadwal</a>
+        </div>
+    </header>
+
+    <section class="next-match-section" id="next-match">
+        <div class="container">
+            <h2 class="section-title text-white">PERTANDINGAN BERIKUTNYA</h2>
+            <div class="match-card animate-on-scroll">
+                <div class="row align-items-center">
+                    <div class="col-5 text-center">
+                        <img src="assets/logo/fcbekasi.png" alt="Logo FC Bekasi City" class="team-logo">
+                        <h3 class="team-name">FC Bekasi City</h3>
+                    </div>
+                    <div class="col-2 text-center">
+                        <span class="vs-text">VS</span>
+                    </div>
+                    <div class="col-5 text-center">
+                        <img src="assets/logo/adhyaksa.png" alt="Logo Adhyaksa FC" class="team-logo">
+                        <h3 class="team-name">Adhyaksa FC</h3>
+                    </div>
+                </div>
+                <div class="match-details text-center">
+                    <p class="match-info">Liga 2 Indonesia | 18 November 2025 | 19:00 WIB</p>
+                    <p class="match-venue">Stadion Patriot Candrabhaga</p>
+                    <div id="countdown" class="countdown-timer"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" id="news">
+        <div class="container">
+            <h2 class="section-title text-danger">BERITA TERBARU</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4 animate-on-scroll">
+                    <div class="card news-card">
+                        <img src="assets/images/berita1.jpg" class="card-img-top" alt="Berita 1">
+                        <div class="card-body">
+                            <span class="news-category">Skor</span>
+                            <h5 class="card-title">Hasil Imbang 0-0, FC Bekasi City Bawa Pulang 1 Poin dari Kandang PSPS Pekanbaru</h5>
+                            <p class="card-text">PSPS Pekanbaru harus berbagi 1 poin dengan FC Bekasi City usai bermain imbang dengan skor 0-0 di Liga 2 musim 2025-2026, pada Kamis (13/11) di Stadion Kaharuddin Nasution Rumbai Pekanbaru.</p>
+                            <a href="#" class="btn btn-outline-danger">Baca Selenlogoapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 animate-on-scroll">
+                    <div class="card news-card">
+                        <img src="assets/images/berita2.webp" class="card-img-top" alt="Berita 2">
+                        <div class="card-body">
+                            <span class="news-category">Olahraga</span>
+                            <h5 class="card-title">Kalah dari FC Bekasi City, PSMS Medan Tatap Putaran Kedua Championship</h5>
+                            <p class="card-text">"Kami optimis bisa meraih 3 poin penuh di kandang," ujar sang pelatih...</p>
+                            <a href="#" class="btn btn-outline-danger">Baca Selenlogoapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 animate-on-scroll">
+                    <div class="card news-card">
+                        <img src="assets/images/berita3.webp" class="card-img-top" alt="Berita 3">
+                        <div class="card-body">
+                            <span class="news-category">Olahraga</span>
+                            <h5 class="card-title">Big Match Liga 2: FC Bekasi City Jamu Adhyaksa FC di Patriot, Misi Balas Dendam Laskar Kuda Hitam</h5>
+                            <p class="card-text">Pertarungan papan atas ini menjadi krusial bagi kedua tim. Laskar Kuda Hitam bertekad merebut poin penuh di kandang setelah kalah di pertemuan pertama, sementara Sang Jaksa ingin mengamankan posisi puncak klasemen.</p>
+                            <a href="#" class="btn btn-outline-danger">Baca Selenlogoapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light cinematic-bg" id="team-section">
+        <div class="container">
+            <h2 class="section-title text-danger">SKUAD KAMI</h2>
+            
+            <div class="row" id="initial-squad-list">
+                </div>
+            
+            <div class="row hidden-squad" id="full-squad-list">
+                </div>
+
+            <div class="text-center mt-4" id="squad-btn-container">
+                <a href="#" class="btn btn-danger btn-lg animate-on-scroll" id="show-all-squad-btn">Lihat Semua Skuad</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-title">FC BEKASI CITY</h5>
+                    <p>Situs resmi klub kebanggaan warga Bekasi. Ikuti kami untuk mendapatkan informasi eksklusif.</p>
+                    <img src="assets/logo/fcbekasi.png" alt="Logo" height="60">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-title">Navigasi Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#news">Berita</a></li>
+                        <li><a href="#team-section">Tim</a></li>
+                        </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-title">Ikuti Kami</h5>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/fcbekasi/" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/fcbekasicity/" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="https://youtube.com/@fcbekasicity5351?si=dQoXqe5i-wfcD8oX" class="social-link"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="text-center">
+                <p class="copyright-text">&copy; 2025 FC Bekasi City. Semua Hak Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="modal fade" id="scheduleModal" tabindex="-1" aria-labelledby="scheduleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-danger text-white">
+                <div class="modal-header border-bottom border-light">
+                    <h5 class="modal-title" id="scheduleModalLabel">JADWAL PERTANDINGAN FC BEKASI CITY</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="match-schedule-item row align-items-center mb-4 pb-3 border-bottom border-light">
+                        <div class="col-3 text-center">
+                            <img src="assets/logo/fcbekasi.png" alt="Logo FC Bekasi City" class="team-logo-small">
+                            <p class="team-name-small">FC Bekasi City</p>
+                        </div>
+                        <div class="col-1 text-center"><span class="vs-text-small">VS</span></div>
+                        <div class="col-3 text-center">
+                            <img src="assets/logo/adhyaksa.png" alt="Logo Adhyaksa FC" class="team-logo-small">
+                            <p class="team-name-small">Adhyaksa FC</p>
+                        </div>
+                        <div class="col-5">
+                            <p class="match-date-venue mb-1"><i class="bi bi-calendar-event me-2"></i>18 November 2025</p>
+                            <p class="match-date-venue"><i class="bi bi-geo-alt-fill me-2"></i>Stadion Patriot Candrabhaga</p>
+                        </div>
+                    </div>
+                    <div class="match-schedule-item row align-items-center mb-4 pb-3 border-bottom border-light">
+                        <div class="col-3 text-center">
+                            <img src="assets/logo/fcbekasi.png" alt="Logo FC Bekasi City" class="team-logo-small">
+                            <p class="team-name-small">FC Bekasi City</p>
+                        </div>
+                        <div class="col-1 text-center"><span class="vs-text-small">VS</span></div>
+                        <div class="col-3 text-center">
+                            <img src="assets/logo/persekat.png" alt="Logo Persekat" class="team-logo-small">
+                            <p class="team-name-small">Persekat</p>
+                        </div>
+                        <div class="col-5">
+                            <p class="match-date-venue mb-1"><i class="bi bi-calendar-event me-2"></i>24 November 2025</p>
+                            <p class="match-date-venue"><i class="bi bi-geo-alt-fill me-2"></i>Patriot Candrabhaga</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top border-light">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Tutup</button>
+                    <a href="#" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#ticketModal">Beli Tiket Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="ticketModal" tabindex="-1" aria-labelledby="ticketModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-danger text-white">
+                <div class="modal-header border-bottom border-light">
+                    <h5 class="modal-title" id="ticketModalLabel">INFORMASI PEMBELIAN TIKET</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead text-center mb-0">
+                        Untuk pembelian tiket, silakan datang langsung ke loket resmi di Stadion Patriot Candrabhaga pada hari pertandingan.
+                    </p>
+                </div>
+                <div class="modal-footer border-top-0">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>

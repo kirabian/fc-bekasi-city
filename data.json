@@ -1,0 +1,39 @@
+{
+  "nextMatch": {
+    "teamA_logo": "https://via.placeholder.com/60x60?text=FCBC",
+    "teamB_logo": "https://via.placeholder.com/60x60?text=PSM",
+    "teamA_name": "FC Bekasi City",
+    "teamB_name": "PSM Makassar",
+    "competition": "Piala Indonesia",
+    "date": "Senin, 18 November 2024",
+    "time": "19:30 WIB",
+    "venue": "Stadion Patriot Chandrabhaga"
+  },
+  "lastMatch": {
+    "teamA_logo": "https://via.placeholder.com/60x60?text=FCBC",
+    "teamB_logo": "https://via.placeholder.com/60x60?text=PERSB",
+    "score": "2 - 0",
+    "teamA_name": "FC Bekasi City",
+    "teamB_name": "Persib Bandung"
+  },
+  "news": [
+    {
+      "image": "https://via.placeholder.com/400x250/555555/FFFFFF?text=Latihan+Keras",
+      "title": "Tim Latihan Keras Jelang Laga Melawan PSM",
+      "date": "16 November 2024",
+      "summary": "Para pemain FC Bekasi City menjalani latihan intensif untuk persiapan laga besar..."
+    },
+    {
+      "image": "https://via.placeholder.com/400x250/666666/FFFFFF?text=Tiket+Sold+Out",
+      "title": "Tiket Derby Bekasi Ludes Terjual",
+      "date": "15 November 2024",
+      "summary": "Antusiasme suporter sangat tinggi, tiket untuk pertandingan derby ludes dalam 2 jam..."
+    },
+    {
+      "image": "https://via.placeholder.com/400x250/777777/FFFFFF?text=Pemain+Baru",
+      "title": "Wawancara Eksklusif dengan Rekrutan Baru Kita",
+      "date": "14 November 2024",
+      "summary": "Kami berbincang dengan Budi Santoso mengenai kepindahannya ke FC Bekasi City..."
+    }
+  ]
+}
